@@ -69,6 +69,7 @@
                 L.GeoJSON.__super__.onAdd.call(this, map);
                 this.map = map;
                 map.on('zoomend', this.applyJsonStyles, this);
+                this.applyJsonStyles();
             },
 
             onRemove: function (map) {

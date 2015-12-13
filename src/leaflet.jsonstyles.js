@@ -23,11 +23,13 @@
             },
 
             applyJsonStyles: function () {
+                var style = {};
                 this.jsonStyle.forEach(function (rule) {
                     if (this.jsonStyleIsApplicable(rule)) {
-                        this.setStyle(rule.style);
+                        style = L.extend(style, rule.style);
                     }
                 }, this);
+                this.setStyle(style);
             },
 
             jsonStyleIsApplicable: function (rule) {

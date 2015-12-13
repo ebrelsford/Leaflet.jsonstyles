@@ -1,6 +1,6 @@
 {
   "name": "leaflet-jsonstyles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Style Leaflet layers using JSON objects",
   "main": "src/leaflet.jsonstyles.js",
   "scripts": {
